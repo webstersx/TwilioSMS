@@ -1,8 +1,11 @@
 TwilioSMS
 =========
 
-The simplest way to send SMS with Twilio
+The simplest way to send SMS with Twilio. Zero dependencies.
 
+This currently only supports sending SMS messages.  
+
+Note: If during sending you get an error that the To number isn't recognised and it contains a '+', try replacing it with %2B.
 
 Usage
 =====
