@@ -107,7 +107,7 @@
     //start an async connection
     [NSURLConnection sendAsynchronousRequest:r queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
         
-//only debug if this is a debug builds
+//only print to log if this is a debug build
 #ifdef DEBUG
         NSString *resString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
         NSLog(@"%@\n%@\n%@\n%@", response, data, connectionError, resString);
